@@ -3,7 +3,7 @@ apply plugin: 'signing'
 
 group = 'com.raisin'
 archivesBaseName = "maleorang"
-version = '3.0-0.9.7'
+version = '3.0-0.9.8a'
 
 task javadocJar(type: Jar) {
     classifier = 'javadoc'
