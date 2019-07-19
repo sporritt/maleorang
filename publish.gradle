@@ -43,7 +43,7 @@ if (project.hasProperty('sonatypeUsername') && project.hasProperty('sonatypePass
                     description 'MailChimp API Wrapper for Java'
                     packaging 'jar'
 
-                    url 'https://github.com/raisin-gmbh/maleorang'
+                    url 'https://github.com/raisin-gmbh/maleorang/tree/raisin-feature-timeout-parameterization'
 
                     scm {
                         connection 'scm:git:git@github.com:raisin-gmbh/maleorang.git'

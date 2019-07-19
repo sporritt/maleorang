@@ -39,6 +39,11 @@ Changes
 Bug fixes
 * Corrected EditMergeFieldMethod response object to be MergeFieldInfo and not MemberInfo.
 
+### New features, changes, and bug fixes on version 3.0-0.9.8a
+
+Changes
+* Enhanced the MailchimpClient API to allow the parameterization of timeOut parameters .
+
 ### Build tools integration
 
 MaleOrang is accessible from [Maven Central](https://mvnrepository.com/artifact/com.raisin/maleorang) so it can be easily integrated with your favorite build tools like Gradle or Maven.
