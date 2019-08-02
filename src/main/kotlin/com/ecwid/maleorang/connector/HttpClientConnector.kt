@@ -4,14 +4,12 @@ import org.apache.commons.codec.binary.Base64
 import org.apache.http.client.config.RequestConfig
 import org.apache.http.client.methods.*
 import org.apache.http.entity.StringEntity
-import org.apache.http.impl.client.CloseableHttpClient
 import org.apache.http.impl.client.HttpClientBuilder
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager
 import org.apache.http.util.EntityUtils
 
 import java.io.IOException
 import java.net.URI
-import java.nio.charset.Charset
 
 /**
  * Implementation of [Connector] which uses Apache HttpClient library to access MailChimp API service point.

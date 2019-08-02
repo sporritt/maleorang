@@ -21,9 +21,9 @@ public class ExistingMethodExample {
     }
 
     /**
-     * Subscribes a user to list.
+     * Subscribes a user to a list.
      */
-    //@Test
+    @Test
     public void subscribeUserToList() throws Exception {
         MailchimpClient client = new MailchimpClient(apiKey);
         try {
@@ -41,24 +41,22 @@ public class ExistingMethodExample {
     }
 
     /**
-     * Subscribes a user to list.
+     * Subscribes a user to a list using a client with custom timeOut parameters.
      */
     @Test
     public void usingClientWithTimeOutParameters() throws Exception {
-        Integer connectTimeOut = 15000;
-        int socketTimeOut = 300000;
-        int connectionRequestTimeOut = 15000;
+        Integer connectTimeOut = 25000;
+        int socketTimeOut = 400000;
+        int connectionRequestTimeOut = 25000;
         MailchimpClient client = new MailchimpClient(apiKey,connectTimeOut,socketTimeOut,connectionRequestTimeOut);
         try {
             EditMemberMethod.CreateOrUpdate method = new EditMemberMethod.CreateOrUpdate(listId, "vasya.pupkin@gmail.com");
             method.status = "subscribed";
             method.merge_fields = new MailchimpObject();
-            method.merge_fields.mapping.put("FNAME", "Vasya");
-            method.merge_fields.mapping.put("LNAME", "Pupkin");
+            method.merge_fields.mapping.put("FNAME", "Vasya2");
+            method.merge_fields.mapping.put("LNAME", "Pupkin2");
 
             MemberInfo member = client.execute(method);
-
-            System.out.println("Done fuckers");
             System.err.println("The user has been successfully subscribed: " + member);
         } finally {
             client.close();

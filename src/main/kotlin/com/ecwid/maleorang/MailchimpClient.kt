@@ -21,6 +21,8 @@ open class MailchimpClient protected constructor(
     /**
      * Instances created via this constructor are thread safe since they share a thread safe pool of http connections.
      * However in terms of performance it doesn't matter whether you reuse the same instance for the whole application or re-create it on every operation.
+     * TimeOut parameters are optional. If not provided, Mailchimp client will use 15000 Milliseconds for connect and connectionRequest timeouts, and 300000 Milliseconds for
+     * socketTimeOut
      */
     @JvmOverloads
     constructor(apiKey: String, connectTimeOut: Int = 15000, socketTimeOut: Int = 300000, connectionRequestTimeOut: Int = 15000) :

@@ -42,7 +42,7 @@ Bug fixes
 ### New features, changes, and bug fixes on version 3.0-0.9.8-M1
 
 Changes
-* Enhanced the MailchimpClient API to allow the parameterization of timeOut parameters .
+* Enhanced the MailchimpClient API to allow the optional parameterization of timeOut parameters (connectTimeOut, socketTimeOut, and connectionRequestTimeOut). 
 
 ### Build tools integration
 
