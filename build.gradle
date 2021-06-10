@@ -6,13 +6,17 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.9"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.51"
+        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.3'
     }
 }
+
 
 plugins{
     id 'org.jetbrains.kotlin.jvm' version '1.2.51'
     id 'java'
 }
+
+apply plugin: 'com.github.johnrengelman.shadow'
 
 apply from: 'wrapper.gradle'
 apply from: 'compile.gradle'
@@ -37,4 +41,10 @@ dependencies {
     compile 'joda-time:joda-time:2.9.4'
 
     testCompile 'org.testng:testng:6.8.21'
+}
+
+shadowJar {
+    dependencies {
+        include(dependency("org.jetbrains.kotlin:kotlin-stdlib"))
+    }
 }
