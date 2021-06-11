@@ -1,5 +1,7 @@
 ### General info
-MaleOrang provides access to [MailChimp API v3.0](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/) methods from Java code. It is a continuation of [ecwid-mailchimp](https://github.com/Ecwid/maleorang) which is no longer supported.
+MaleOrang provides access to [MailChimp API v3.0](http://developer.mailchimp.com/documentation/mailchimp/reference/overview/) methods from Java code. 
+
+This repository is fork of [raisin-gmbh/maleorang](https://github.com/raisin-gmbh/maleorang), which is/was itself "a continuation of [ecwid-mailchimp](https://github.com/Ecwid/maleorang) which is no longer supported.". It's unclear whether `raisin-gmbh/maleorang` is still alive though.
 
 MaleOrang is written in [Kotlin language](https://kotlinlang.org/) and can be used with any language which runs on JVM. Refer to the [javadoc pages](http://www.javadoc.io/doc/com.raisin/maleorang/) for details.
 
