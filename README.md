@@ -9,6 +9,7 @@ MaleOrang is written in [Kotlin language](https://kotlinlang.org/) and can be us
 
 Currently MaleOrang has wrappers for a number of MailChimp API methods:
 * [Members methods](http://developer.mailchimp.com/documentation/mailchimp/reference/lists/members/)
+* [Tags methods](https://mailchimp.com/developer/marketing/api/list-member-tags/)
 * [List methods](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/)
 * [Campaign methods](https://developer.mailchimp.com/documentation/mailchimp/reference/campaigns/)
 * [Reports methods](https://developer.mailchimp.com/documentation/mailchimp/reference/reports/)
